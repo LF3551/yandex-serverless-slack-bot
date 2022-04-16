@@ -7,18 +7,18 @@ Simple Slack bot example using Yandex Cloud
 ## Steps 
 
 1. First you need to [Create your App](https://api.slack.com/apps):
-  - Click **Create New App** 
-  - In the **Name field**, enter the app name, in our case: `MY_SLACK_BOT`
-  - Select the workspace and click **Create app**
-  - Grant permissions to the **MY_SLACK_BOT** app:
+  - Click `Create New App`
+  - In the `Name field`, enter the app name, in our case: `MY_SLACK_BOT`
+  - Select the workspace and click `Create app`
+  - Grant permissions to the `MY_SLACK_BOT` app:
     - go to Features -> OAuth@Permissions -> Scopes -> Bot Token Scopes:
     - add:
       `chat:write`
       `commands`
       `im:history`
     - go to Features -> OAuth@Permissions:
-      - click **Install to Workspace**
-      - click **Allow**
+      - click `Install to Workspace`
+      - click `Allow`
       - at the top you will see pop-up `Success!`
       - below we can see `Bot User OAuth Token`. Copy to your notes
     - go to Settings -> Basic Information:
@@ -26,11 +26,11 @@ Simple Slack bot example using Yandex Cloud
 
 2. Go to [Yandex Cloud Console](https://console.cloud.yandex.ru/)
 
-3. Create **Yandex Service account** in Yandex Cloud:
+3. Create `Yandex Service account` in Yandex Cloud:
   - click `Create service account`
   - add name, in our case `for-slack-bot`
   - add role `editor`
-  - click **Create**
+  - click `Create`
   - copy `Service Account ID` to your notes
 
 4. Create **Yandex API-Gateway** in Yandex Cloud:
