@@ -54,7 +54,8 @@ Simple Slack bot example using Yandex Cloud
           return {
               'statusCode': 200,
               'body': challenge_answer
-          }```
+          }
+          ```
    - select below **Yandex Service account** you created earlier
    - set `timeout settings` to 5 sec
    - set variable `SLACK_BOT_TOKEN`, with key `Bot User OAuth Token` from our notes
