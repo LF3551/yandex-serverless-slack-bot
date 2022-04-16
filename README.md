@@ -43,7 +43,7 @@ Simple Slack bot example using Yandex Cloud
    - choose programming language, in our case it will be **Python**:
    - create `index.py` file (If is not created as template):
      - add temp data in `index.py` file:
-      import json
+      ```import json
       def handler(event, context):
           print(f"Received event:\n{event}\nWith context:\n{context}")
 
@@ -54,7 +54,7 @@ Simple Slack bot example using Yandex Cloud
           return {
               'statusCode': 200,
               'body': challenge_answer
-          }
+          }```
    - select below **Yandex Service account** you created earlier
    - set `timeout settings` to 5 sec
    - set variable `SLACK_BOT_TOKEN`, with key `Bot User OAuth Token` from our notes
@@ -64,7 +64,7 @@ Simple Slack bot example using Yandex Cloud
 
 7. Go back to **Yandex API-Gateway** Settings in Yandex Cloud with name `for-slack-bot`:
    - add POST spec below:
-     paths:
+     ```paths:
         /:
           get:
             x-yc-apigateway-integration:
@@ -79,7 +79,7 @@ Simple Slack bot example using Yandex Cloud
                 type: cloud_functions
                 function_id: `Function ID`
                 service_account_id: `Service Account ID`
-            operationId: slack-challenge
+            operationId: slack-challenge```
     
 
 6. Go back to **API Slack settings**:
