@@ -40,7 +40,7 @@ Simple Slack bot example using Yandex Cloud
     - Copy `Server Url` to your notes 
       `https://d5dtglrhssdfgvms1i.apigw.yandexcloud.net` (url example from spec)
 
-6. Create  `Yandex Cloud Function` in Yandex Cloud:
+5. Create  `Yandex Cloud Function` in Yandex Cloud:
    - add name, in our case `function-for-api-python-slack-bot`
    - click `Create`
    - choose programming language, in our case it will be `Python`:
@@ -66,7 +66,7 @@ Simple Slack bot example using Yandex Cloud
    - click `Create version`
    - copy `Function ID` to your notes
 
-7. Go back to `Yandex API-Gateway` Settings in Yandex Cloud with name `for-slack-bot`:
+6. Go back to `Yandex API-Gateway` Settings in Yandex Cloud with name `for-slack-bot`:
    - add `POST` spec below:
      ```paths:
         /:
@@ -83,10 +83,10 @@ Simple Slack bot example using Yandex Cloud
                 type: cloud_functions
                 function_id: `Function ID`
                 service_account_id: `Service Account ID`
-            operationId: slack-challenge```
+            operationId: slack-challenge
+            ```
     
-
-6. Go back to `API Slack settings`:
+7. Go back to `API Slack settings`:
    - go to Basic Information -> Add features and functionality -> 
    -> Event Subscribtions -> Enable Events
    - click `On`
@@ -101,14 +101,14 @@ Simple Slack bot example using Yandex Cloud
    - select `Show Tabs`
     - click `Allow users to send Slash commands and messages from the messages tab`
 
-7. Go back to `Yandex Cloud Function` in Yandex Cloud:
-  - delete old temp code from `index.py` file
-  - copy and paste the code from `index.py` to file `index.py` 
-    in `Yandex Cloud Function` Editor
-  - create file `requirements.txt` in `Yandex Cloud Function` Editor
-  - copy and paste data from `requirements.txt` to file `requirements.txt` 
-    in `Yandex Cloud Function` Editor
-  - click `Create Version`
+8. Go back to `Yandex Cloud Function` in Yandex Cloud:
+    - delete old temp code from `index.py` file
+    - copy and paste the code from `index.py` to file `index.py` 
+      in `Yandex Cloud Function` Editor
+    - create file `requirements.txt` in `Yandex Cloud Function` Editor
+    - copy and paste data from `requirements.txt` to file `requirements.txt` 
+      in `Yandex Cloud Function` Editor
+    - click `Create Version`
 
 8. Reopen Your Slack APP on your Windows\Linux OS
 
