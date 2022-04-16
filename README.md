@@ -45,7 +45,7 @@ Simple Slack bot example using Yandex Cloud
    - click `Create`
    - choose programming language, in our case it will be `Python`:
    - create `index.py` file (If is not created as template):
-     - add temp data in `index.py` file👇:
+     - add temp code in `index.py` file👇:
       ```
       import json
       def handler(event, context):
