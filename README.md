@@ -68,7 +68,7 @@ Simple Slack bot example using Yandex Cloud
 
 6. Go back to `Yandex API-Gateway` Settings in Yandex Cloud with name `for-slack-bot`:
    - add `POST` spec below:
-```
+      ```
       paths:
         /:
           get:
@@ -85,7 +85,7 @@ Simple Slack bot example using Yandex Cloud
                 function_id: `Function ID`
                 service_account_id: `Service Account ID`
             operationId: slack-challenge
-```
+      ```
     
 7. Go back to `API Slack settings`:
    - go to Basic Information -> Add features and functionality -> 
