@@ -46,7 +46,8 @@ Simple Slack bot example using Yandex Cloud
    - choose programming language, in our case it will be `Python`:
    - create `index.py` file (If is not created as template):
      - add temp data in `index.py` file:
-      ```import json
+      ```
+      import json
       def handler(event, context):
           print(f"Received event:\n{event}\nWith context:\n{context}")
 
@@ -58,7 +59,7 @@ Simple Slack bot example using Yandex Cloud
               'statusCode': 200,
               'body': challenge_answer
           }
-          ```
+      ```
    - select below `Yandex Service account` you created earlier
    - set `timeout settings` to 5 sec
    - set variable `SLACK_BOT_TOKEN`, with key `Bot User OAuth Token` from our notes
