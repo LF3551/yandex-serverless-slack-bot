@@ -27,18 +27,18 @@ Simple Slack bot example using Yandex Cloud
 2. Go to [Yandex Cloud Console](https://console.cloud.yandex.ru/)
 
 3. Create `Yandex Service account` in Yandex Cloud:
-  - click `Create service account`
-  - add name, in our case `for-slack-bot`
-  - add role `editor`
-  - click `Create`
-  - copy `Service Account ID` to your notes
+    - click `Create service account`
+    - add name, in our case `for-slack-bot`
+    - add role `editor`
+    - click `Create`
+    - copy `Service Account ID` to your notes
 
 4. Create `Yandex API-Gateway` in Yandex Cloud:
-  - add name, in our case `api-python-slack-bot` 
-  - click `Create`
-  - after publication in spec you can see `servers` section:
-  - Copy `Server Url` to your notes 
-    `https://d5dtglrhssdfgvms1i.apigw.yandexcloud.net` (url example from spec)
+    - add name, in our case `api-python-slack-bot` 
+    - click `Create`
+    - after publication in spec you can see `servers` section:
+    - Copy `Server Url` to your notes 
+      `https://d5dtglrhssdfgvms1i.apigw.yandexcloud.net` (url example from spec)
 
 6. Create  `Yandex Cloud Function` in Yandex Cloud:
    - add name, in our case `function-for-api-python-slack-bot`
