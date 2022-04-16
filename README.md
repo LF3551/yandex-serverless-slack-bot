@@ -45,7 +45,7 @@ Simple Slack bot example using Yandex Cloud
    - click `Create`
    - choose programming language, in our case it will be `Python`:
    - create `index.py` file (If is not created as template):
-     - add temp data in `index.py` file:
+     - add temp data in `index.py` file👇:
       ```
       import json
       def handler(event, context):
@@ -68,7 +68,7 @@ Simple Slack bot example using Yandex Cloud
    - copy `Function ID` to your notes
 
 6. Go back to `Yandex API-Gateway` Settings in Yandex Cloud with name `for-slack-bot`:
-   - add `POST` spec below:
+   - add `POST` spec below👇:
       ```
       paths:
         /:
