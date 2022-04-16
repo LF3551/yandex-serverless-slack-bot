@@ -20,7 +20,7 @@ Simple Slack bot example using Yandex Cloud
         - click `Install to Workspace`
         - click `Allow`
         - at the top you will see pop-up `Success!`
-        - below we can see `Bot User OAuth Token`. Copy to your notes
+        - below you can see `Bot User OAuth Token`. Copy to your notes
       - go to Settings -> Basic Information:
         - copy `Signing Secret` to your notes
 
@@ -62,8 +62,8 @@ Simple Slack bot example using Yandex Cloud
       ```
    - select below `Yandex Service account` you created earlier
    - set `timeout settings` to 5 sec
-   - set variable `SLACK_BOT_TOKEN`, with key `Bot User OAuth Token` from our notes
-   - set variable `SLACK_SIGNING_SECRET`, with key `Signing Secret` from our notes
+   - set variable `SLACK_BOT_TOKEN`, with key `Bot User OAuth Token` from your notes
+   - set variable `SLACK_SIGNING_SECRET`, with key `Signing Secret` from your notes
    - click `Create version`
    - copy `Function ID` to your notes
 
@@ -95,17 +95,17 @@ Simple Slack bot example using Yandex Cloud
    - paste `Server Url` from your API Gateway here
    - if it is `ok` you will see message `Verified` 
    - below click `Subscribe to bot events`
-   - and `Add Bot User Event` called `message.im`
+   - then click  `Add Bot User Event` and add event called `message.im`
    - click `Save Changes`
    - you will see pop-up `Success!` 
    - go to Features -> App Home and select `Your App’s Presence in Slack`
     - click `Always Show My Bot as Online`
-   - select `Show Tabs`
+    - select `Show Tabs`
     - click `Allow users to send Slash commands and messages from the messages tab`
 
 8. Go back to `Yandex Cloud Function` in Yandex Cloud:
     - delete old temp code from `index.py` file
-    - copy and paste the code from `index.py` to file `index.py` 
+    - copy and paste code from `index.py` to file `index.py` 
       in `Yandex Cloud Function` Editor
     - create file `requirements.txt` in `Yandex Cloud Function` Editor
     - copy and paste data from `requirements.txt` to file `requirements.txt` 
